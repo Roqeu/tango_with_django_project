@@ -1,4 +1,4 @@
-"""itech_project URL Configuration
+"""tango_with_djagno_project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/urls/
@@ -20,6 +20,7 @@ from rango import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('about/', views.index, name='about'),
     path('rango/', include('rango.urls')),
     # The above maps any URLs starting with rango/ 
     #to be handled by rango
